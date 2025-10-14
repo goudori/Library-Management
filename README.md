@@ -50,6 +50,16 @@
 
 
 
+・文字列型→タイトル、著者
+
+
+
+
+
+・整数型→番号
+
+
+
 
 
 
@@ -71,8 +81,109 @@
 
 
 
-2.
+2.LibrarySearch.javaのインターフェースで、「タイトル、著者、番号の本検索のルール作り」を書きます。
 
+
+
+
+
+
+
+
+<img width="610" height="411" alt="スクリーンショット 2025-10-15 072335" src="https://github.com/user-attachments/assets/adae7613-7e7f-495e-888f-0313ab0eb1b5" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.Library.javaクラスで、本の「タイトル、著者、番号」でそれぞれの検索で、一致した本を探す事ができる判定処理を書きます。
+
+
+
+
+・タイトルの判定処理
+
+
+
+
+
+
+
+<img width="638" height="374" alt="スクリーンショット 2025-10-15 074548" src="https://github.com/user-attachments/assets/5996319f-46e3-472e-8d17-9f7ead76c7d1" />
+
+
+
+
+
+
+
+
+
+
+・著者の判定処理
+
+
+
+
+
+
+
+
+
+
+<img width="638" height="373" alt="スクリーンショット 2025-10-15 074715" src="https://github.com/user-attachments/assets/6ca44101-b212-4ecc-b3d2-94625d1bf8ed" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+・番号の判定処理
+
+
+
+
+
+
+
+<img width="493" height="282" alt="スクリーンショット 2025-10-15 074736" src="https://github.com/user-attachments/assets/860a68d1-3686-4ffb-bc78-af846928a486" />
+
+
+
+
+
+
+
+
+
+4.Book.javaクラスで、@Overrideしたメソッドをコンソール結果で、ユーザーが読めれるように「toString」メソッドを実装する事を書く。
+
+
+
+
+
+
+
+
+<img width="577" height="359" alt="スクリーンショット 2025-10-15 074835" src="https://github.com/user-attachments/assets/d47637c2-be87-434d-9235-eed41e404267" />
 
 
 ---
@@ -109,12 +220,12 @@
 
 ---
 ## ✍学んだ事
-・@Overrideしたコードを実行結果でユーザーが読めれるにするには、toStringメソッドが必要だと分かりました。
+・@Overrideしたコードを実行結果でユーザーが読めれるにするには、toStringメソッドが必要だと分かりました。これをしないとコンソール結果が暗号みたいになる。
 
 
 
 
-・文字列型と数値型で、値が正しいかどうかを判定するのは、違うという事が分かりました。
+・値が正しいかどうかを確認判定するのは、文字列型では、「文字列メソッド((例)equalsIgnoreCase)」を使うのに対して、数値型では、「==」を使う事が、分かりました。
 
 
 
